@@ -1,13 +1,151 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Itim', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 { margin: 0;}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: white;
+}
+
+.theme {
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3rem;
+}
+
+.countdown {
+  text-align: center;
+  padding-top: 2rem;
+
+}
+
+.timer {
+  margin: 2rem;
+  padding: 2rem;
+  border: .2rem solid;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.timer div {
+  width: 10rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 10rem;
+  padding: 1rem;
+  text-decoration: none;
+  resize: none;
+  border-radius: 16px 16px 0px 0px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+textarea::placeholder {
+  color:var(--placeholder-color) !important;
+}
+
+form button {
+  padding: .5rem;
+  border-radius: 0px 0px 16px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+form button:hover {
+  background-color:var(--hover-color) !important;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+.li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.li span {
+  border-radius: 8px 8px 0px 0px;
+  color: black;
+  padding: .5rem;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  width: 20rem;
+  color: black;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.delete-button {
+  position: absolute;
+  right: 0;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: crimson;
+  color: white;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+}
+
+.error {
+  background-color: crimson;
+  color: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
 }
